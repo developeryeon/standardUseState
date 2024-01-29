@@ -14,12 +14,12 @@ function App() {
 		<div>
 			<h1>학생 목록</h1>
 			<ul>
+				{/* TODO: 학생이름을 클릭하면 나이와 점수가 alert 돼야 해요.*/}
 				{filteredStudents.map((student, index) => (
 					<li key={index}>
-						<button onClick={() => alert(`이름: ${student.name}, 나이: ${student.age}, 점수: ${student.grade}`)}></button>
+						<button onClick={() => alert(`나이:${student.age}, 점수:${student.grade}`)}>클릭하면 학생목록</button>
 					</li>
 				))}
-				{/* TODO: 학생이름을 클릭하면 나이와 점수가 alert 돼야 해요.*/}
 			</ul>
 		</div>
 	);
